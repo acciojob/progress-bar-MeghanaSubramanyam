@@ -10,7 +10,7 @@ body{
 	justify-content:center;
 	align-items:center;
 	height:100vh;
-	background-color:#
+	background-color:#f4f4f9
 }
 .container{
 	text-align:center;
@@ -28,7 +28,7 @@ body{
 	top:50%;
 	left:0;
 	right:0;
-	height:40px;
+	height:4px;
 	background-color:#3498db;
 	transform:translateY(-50%);
 	width:0%;
@@ -67,4 +67,5 @@ body{
 .btn:disabled{
 	background-color:#b3c0c6;
 	cursor:not-allowed;
+
 }

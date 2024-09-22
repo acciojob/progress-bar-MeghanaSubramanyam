@@ -13,14 +13,14 @@ next.addEventListener('click',()=>{
 		currentActive=circles.length;
 	}
 	update()
-})
+});
 prev.addEventListener('click',()=>{
-	currentActive-;
+	currentActive--;
 	if(currentActive<1){
 		currentActive=1;
 	}
 	update();
-})
+});
 function update(){
 	circles.forEach((circle,idx)=>{
 		if(idx<currentActive){
@@ -30,8 +30,8 @@ function update(){
 			circle.classList.remove('active')
 		}
 	})
-	const active=document.querySelectorAll('.active');
-	progress.style.width=((active.length-1)/(circle.length-1))*100+'%';
+	const actives=document.querySelectorAll('.active');
+	progress.style.width=((actives.length-1)/(circle.length-1))*100+'%';
 
 	if(currentActive===1){
 		prev.disabled=true;
